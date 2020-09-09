@@ -21,13 +21,13 @@ def reverse_a_string(string):
 print(reverse_a_string("hello"))
 
 
-# from geeks to geeks
 def reverse(s):
   str = ""
   for i in s:
     str = i + str
   return str
 
+#recursion
 def reverse2(s):
     if len(s) == 0:
         return s
@@ -35,8 +35,7 @@ def reverse2(s):
         return reverse(s[1:]) + s[0]
 
 def reverse3(string):
-    string = "".join(reversed(string))
-    return string
+    return "".join(reversed(string))
 
 
 
