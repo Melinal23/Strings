@@ -20,7 +20,7 @@ def reverseWords(s):
     if len(s) == 0:
         return s
 
-    s = s.split()
+    s = s.strip().split()
 
     start = 0
     end = len(s) - 1
