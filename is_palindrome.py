@@ -1,4 +1,4 @@
-def isPalindrome(self, s: str) -> bool:
+def isPalindrome(s):
 
     if s == "":    # an empty string is a palindrome
         return True
@@ -17,3 +17,9 @@ def isPalindrome(self, s: str) -> bool:
         end -= 1
 
     return True
+
+"""
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+"""
