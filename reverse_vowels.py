@@ -15,7 +15,6 @@ def reverse_vowels(word):
         temp.append(char)
 
     start = 0
-
     end = len(temp) - 1
 
     while(start <= end):
