@@ -27,7 +27,7 @@ def isAnagram(s, t):
     return True
 
 
-def isAnagram_leetsoln(s, t):
+def isAnagram_secondsoln(s, t):
 
     if len(s) != len(t):
         return False
@@ -45,7 +45,29 @@ def isAnagram_leetsoln(s, t):
     return True
 
 
-def isAnagram_studentsoln(s,t):
+def isAnagram_thirdsoln(s,t):
     if len(s) != len(t):
         return False
     return sorted(s) == sorted(t)
+
+
+def isAnagram_foursoln(s, t):
+
+    if len(s) != len(t):
+        return False
+
+    counter = {}
+
+    for i in range(len(s)):
+        if s[i] not in counter:
+            counter[s[i]] = 1
+        else:
+            counter[s[i]] += 1
+
+    for i in range(len(t)):
+        if counter.get(t[i]) and counter.get(t[i]) > 0:
+            counter[t[i]] -= 1
+        else:
+            return False
+
+    return True
