@@ -20,19 +20,15 @@ def reverse_vowels(word):
 
     while(start <= end):
 
-        while start <= end and temp[start] not in vowels:
+        while start <= end and temp[start] not in vowels: # use a running ptr to skip over constants
             start += 1
 
-        while end >= start and temp[end] not in vowels:
+        while end >= start and temp[end] not in vowels:  # use a running ptr to skip over constants from the end
             end -= 1
 
 
-        print("start", start)
-        print("end", end)
-
-
-        if start <= end and end >= start:
-            temp[start], temp[end] = temp[end], temp[start]
+        if start <= end and end >= start:  # as long as we are in bounds
+            temp[start], temp[end] = temp[end], temp[start]  # swap the vowels
             start += 1
             end -= 1
 
