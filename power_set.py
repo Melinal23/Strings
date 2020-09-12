@@ -30,6 +30,6 @@ def power_set(inputStr):
     return sorted(sets)
     
 """
-Time Complexity: O(n * m) where n is num_of_sets and m is length of input string
+Time Complexity: O(n * 2^n) where n is the length of the input string
 Space Complexity: O(n) from sets
 """
