@@ -51,7 +51,7 @@ def isAnagram_thirdsoln(s,t):
     return sorted(s) == sorted(t)
 
 
-def isAnagram_foursoln(s, t):
+def isAnagram_fourthsoln(s, t):
 
     if len(s) != len(t):
         return False
